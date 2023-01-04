@@ -25,13 +25,10 @@ section{
     section {
         padding-top: 10px;
     }
-    .hero{
-        padding-top: 200px;
-    }
 
 }
 .hero{
-    padding-top: 00px;
+    padding-top: 0;
 }
 .hero_right{
     overflow: hidden;
@@ -102,10 +99,11 @@ body{
 #image-track > .image {
     width: 40vmin;
     height: 56vmin;
+    border-radius: 1px;
     object-fit: cover;
     object-position: 100% center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-
 /* spon css :start */
 
 .sponq{
@@ -338,6 +336,31 @@ body{
     z-index: -2;
 }
 
+/* vetcor with comments */
+
+.hero_vector{
+    position: absolute;
+    width: 25rem;
+    left : 70%;
+    transform: translateY(-20%);
+}
+.timer_vector{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30rem;
+}
+@media only screen and (min-width:1000px) {
+    .hero_vector,timer_vector{
+        width: 30rem;
+    }
+}
+@media only screen and (max-width:850px) {
+    .hero_vector,.timer_vector{
+        display: none;
+    }
+}
+
 
 /* hero responsive */
 
@@ -367,7 +390,6 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 40px;
     }
     .hero_right{
         display: none;
@@ -560,7 +582,7 @@ background: #1B1A27;
     
 }
 .silverfill{
-    transition: all 700ms ease-in-out ;
+    transition: all 400ms ease-in-out ;
     border-radius: 5px;
 }
 .silverfill:hover{
@@ -578,7 +600,7 @@ background: #1B1A27;
 
 }
 .goldfill{
-    transition: all 700ms ease-in-out ;
+    transition: all 400ms ease-in-out ;
     border-radius: 5px;
 }
 
@@ -597,7 +619,7 @@ background: #1B1A27;
     background: #F2A300;
 }
 .bronzefill{
-    transition: all 700ms ease-in-out ;
+    transition: all 400ms ease-in-out ;
     border-radius: 5px
 }
 .bronzefill:hover{
@@ -875,6 +897,9 @@ a{
 
 /* ---------Themes section start ----------- */
 
+.themes_section{
+    margin-top: -2rem;
+}
 .theme_text{
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
@@ -884,6 +909,7 @@ a{
     text-align: center;
     cursor: pointer;
     padding-top : 20px;
+    /* transition: .1 ease; */
 }
 .theme_active_text{
     font-weight: 800;
@@ -1073,10 +1099,11 @@ a{
   .timeline {
     min-width: 250px;
     display: flex;
+    display: flex;
     justify-content: center;
     margin: 20px auto;
     padding: 20px;
-    /* overflow-x: auto; */
+    overflow-x: auto;
     font-family: 'Outfit';
   }
   .timline-box{
