@@ -1282,7 +1282,7 @@ a{
     border-radius: 30px;
     font-size: 1.8rem;
 }
-.spon_coll a{
+.boxx a{
     color: white;
     text-decoration: none;
     white-space: nowrap;
@@ -1305,6 +1305,9 @@ a{
     background-color: #fff;
     color: var(--text-primary);
 }
+/* .spon_coll a:hover{
+    color: var(--text-primary);
+} */
 .boxx{
     display: flex;
     flex-direction: column;
