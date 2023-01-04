@@ -232,6 +232,8 @@ var myChart = new Chart(ctx, {
 let titles = document.getElementsByClassName("theme_text");
 const myChart1 = document.querySelector("#myChart");
 
+clickhandler("#F84F39cccc",2)
+
 function clickhandler(color, idx) {
   show=idx;
   console.log(show);
@@ -245,9 +247,9 @@ function clickhandler(color, idx) {
   myChart1.style.backgroundImage = `url("./svg/${idx}.png")`;
   for (let i = 0; i < 8; i++) {
     if (i == idx) {
-      myChart.data.datasets[0].backgroundColor[idx] = color.slice(0,7);
-      myChart.data.datasets[1].backgroundColor[idx] = color.slice(0,7);
-      myChart.data.datasets[0].backgroundColor[idx+2] = color.slice(0,7);
+      myChart.data.datasets[0].backgroundColor[idx] = color.slice(0,color.length-2);
+      myChart.data.datasets[1].backgroundColor[idx] = color.slice(0,color.length-2);
+      myChart.data.datasets[0].backgroundColor[idx+2] = color.slice(0,color.length-2);
       myChart.data.datasets[0].borderWidth[idx] = 0;
       myChart.data.datasets[1].borderWidth[idx] = 0;
       myChart.data.datasets[0].borderWidth[idx+2] = 0;
