@@ -350,6 +350,13 @@ body{
     top: 100px;
     left: 45%;
 }
+.faq_vector{
+    position: absolute;
+    width: 18rem;
+    bottom: 20px;
+    right: -60px;
+
+}
 @media only screen and (max-width:991.5px) {
     .timer_vector{
         top: 50px;
