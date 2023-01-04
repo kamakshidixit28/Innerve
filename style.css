@@ -219,7 +219,7 @@ body{
     gap: 10px;
     border: 1px solid #BCBCBC;
     border-radius: 30px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 .hidden_nav{
     position: fixed;
@@ -314,6 +314,8 @@ body{
     letter-spacing: 0.08em;
 
     color: #141C3F;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .hero-back-patch{
     position: absolute;
@@ -345,7 +347,7 @@ body{
         font-size: 7rem;
     }
     .hero_p{
-        font-size: .8rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -405,7 +407,7 @@ body{
     }
     .nav_logo,.coll,.spon_coll{
         margin-left: 10px;
-        font-size: .5rem;
+        /* font-size: 1.2rem; */
     }
     .nav_logo{
         letter-spacing: .3rem;
@@ -639,14 +641,14 @@ background: #1B1A27;
         padding-right: 30px;
     } 
     .pinfo{
-        font-size: 0.7rem;
+        font-size: 1rem;
         padding: 0.5rem;
     }
     .pamount{
-        font-size: 15px;
+        font-size: 18px;
     }
     .pnum{
-        font-size: 10px;
+        font-size: 14px;
     }
     .prizeinfo {
         bottom: 50px;
@@ -674,7 +676,7 @@ background: #1B1A27;
         padding-right: 50px;
     } 
     .pinfo{
-        font-size: 7px;
+        font-size: 12px;
     }
     .pamount{
         font-size: 28px;
@@ -709,12 +711,12 @@ background: #1B1A27;
     } 
 
     .pinfo{
-        font-size: 6px;
-        font-size: 0.8rem;
-        padding: 0.8rem;
+        font-size: 12px;
+        /* font-size: 0.8rem; */
+        padding: 0.2rem 0.2rem 0.3rem 0.2rem;
     }
     .pamount{
-        font-size: 23px;
+        font-size: 22px;
     }
     .pnum{
         font-size: 18px;
@@ -739,13 +741,13 @@ background: #1B1A27;
         padding-right: 70px !important;
     }
     .pinfo{
-        font-size: 7px;
+        font-size: 12px;
     }
     .pamount{
-        font-size: 20px;
+        font-size: 22px;
     }
     .pnum{
-        font-size: 15px;
+        font-size: 16px;
     }
 
 }
@@ -756,14 +758,14 @@ background: #1B1A27;
         padding-right: 20px;
     } 
     .pinfo{
-        font-size: 4px;
+        font-size: 10px;
     }
     .pamount{
         padding-top: 5px !important;
-        font-size: 15px;
+        font-size: 18px;
     }
     .pnum{
-        font-size: 12px;
+        font-size: 14px;
     }
     .prizeinfo{
         
@@ -779,19 +781,22 @@ background: #1B1A27;
         bottom: 40px;
     }
 }
-@media only screen and (max-width: 304px){
+@media only screen and (max-width: 307px){
     .pouter{
         padding-left: 40px !important;
         padding-right: 40px !important;
     }
     .pinfo{
-        font-size: 5px;
+        font-size: 8px;
     }
     .pamount{
         font-size: 18px;
     }
     .pnum{
-        font-size: 15px;
+        font-size: 14px;
+    }
+    .hero_open{
+        font-size: 1.3rem;    
     }
 
 }
@@ -1930,7 +1935,7 @@ a{
     background-color: #7561FF;
     pointer-events: none;
     /* margin-top: 10px; */
-    /* top: -10px; */
+    top: -10px;
     left: 20px;
     z-index: 2;
   }
@@ -2141,6 +2146,9 @@ a{
       .faq-section .faq-question.active button {
         font-size:16px;
       }
+      .faq-section .faq-question.active{
+        top: -7px;
+      }
   }
   
   @media screen and (max-width: 767px) {
@@ -2151,7 +2159,7 @@ a{
         background-color: #7561FF;
         pointer-events: none;
         margin-top: -10px;
-        top: 10px;
+        /* top: 10px; */
         left: 0px;
         z-index: 10;
       }
