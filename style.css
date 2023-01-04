@@ -345,13 +345,18 @@ body{
     transform: translateY(-20%);
 }
 .timer_vector{
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
     width: 30rem;
+    top: 100px;
+    left: 45%;
+}
+@media only screen and (max-width:991.5px) {
+    .timer_vector{
+        top: 50px;
+    }
 }
 @media only screen and (min-width:1000px) {
-    .hero_vector,timer_vector{
+    .hero_vector,.timer_vector{
         width: 30rem;
     }
 }
