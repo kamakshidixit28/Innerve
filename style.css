@@ -465,6 +465,10 @@ body{
     .heading{
         font-size: 15px;
     }
+    .nav_innerve{
+        height: 20%;
+    }
+    
     .heading svg{
         height: 14px !important;
     }
@@ -481,6 +485,12 @@ body{
         width: 80px;
         gap: 5px;
         height: 30px;
+    }
+    .contact,.remove{
+        bottom: 80px;
+        width: 120px;
+        gap: 15px;
+        height: 35px;
     }
 
 }
