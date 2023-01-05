@@ -459,6 +459,9 @@ body{
         top: auto;
         margin-top: 100px;
     }
+    .contact{
+        margin-left: 0;
+    }
     .contact,.remove{
         bottom: 80px;
         width: 120px;
@@ -1457,7 +1460,7 @@ a{
     background-color: #7561FF;
     padding: 10px;
     text-decoration: none;
-    
+    transition: .3s ease;
   }
   .contactimgs{
     gap: 1rem;
@@ -2393,7 +2396,11 @@ a{
         font-size: 13px;
       }
   }
-  
+  .fa:hover{
+    background-color: #fff;
+    color: #7561ff;
+  }
+
   @media screen and (max-width: 360px) {
     .faq-block {
       box-sizing: border-box;
