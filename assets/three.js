@@ -33,8 +33,14 @@ var obj;
         camera.position.set(0,0,20);
 
         // obj.position.set(0,0,0);
-
+        var height = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
+            document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
+        height = height - window.innerHeight;
         function moveCamera() {
+            const scroll = document.querySelector('.scroll_inner');
+            let per = (scrollY/height)*100;
+            console.log(per)
+            scroll.style.width = `${per}%`;
         const t = document.body.getBoundingClientRect().top;
         if(window.innerHeight < scrollY){
             document.querySelector('.logo3D').style.display = 'none';

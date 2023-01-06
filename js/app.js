@@ -15,119 +15,69 @@ link.forEach(function (link) {
 })
 
 
-// images carousel
-const track = document.getElementById("image-track");
-track.addEventListener("mouseover",(e)=>{
-document.onmousemove = e => {
-    const x = (e.clientX / window.innerWidth)*100;
+// // images carousel
+// const track = document.getElementById("image-track");
+// track.addEventListener("mouseover",(e)=>{
+// document.onmousemove = e => {
+//     const x = (e.clientX / window.innerWidth)*100;
 
-    track.animate({
-          transform: `translateX(-${100-x}%)`
-        }, { duration: 3000, fill: "forwards" });
+//     track.animate({
+//           transform: `translateX(-${100-x}%)`
+//         }, { duration: 3000, fill: "forwards" });
 
-    for(const image of track.getElementsByClassName("image")) {
-      image.animate({
-          objectPosition: `${100-x}% center`
-      }, { duration: 1200, fill: "forwards" });
-      }
-}
+//     for(const image of track.getElementsByClassName("image")) {
+//       image.animate({
+//           objectPosition: `${100-x}% center`
+//       }, { duration: 1200, fill: "forwards" });
+//       }
+// }
 
-const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+// const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
-const handleOnUp = () => {
-track.dataset.mouseDownAt = "0";  
-track.dataset.prevPercentage = track.dataset.percentage;
-}
+// const handleOnUp = () => {
+// track.dataset.mouseDownAt = "0";  
+// track.dataset.prevPercentage = track.dataset.percentage;
+// }
 
-const handleOnMove = e => {
-if(track.dataset.mouseDownAt === "0") return;
+// const handleOnMove = e => {
+// if(track.dataset.mouseDownAt === "0") return;
 
-const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-      maxDelta = window.innerWidth / 2;
+// const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+//       maxDelta = window.innerWidth / 2;
 
-const percentage = (mouseDelta / maxDelta) * -100,
-      nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-      nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+// const percentage = (mouseDelta / maxDelta) * -100,
+//       nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+//       nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
 
-track.dataset.percentage = nextPercentage;
+// track.dataset.percentage = nextPercentage;
 
-track.animate({
-  transform: `translateX(${nextPercentage}%)`
-}, { duration: 1200, fill: "forwards" });
+// track.animate({
+//   transform: `translateX(${nextPercentage}%)`
+// }, { duration: 1200, fill: "forwards" });
 
-for(const image of track.getElementsByClassName("image")) {
-  image.animate({
-    objectPosition: `${100 + nextPercentage}% center`
-  }, { duration: 1200, fill: "forwards" });
-}
-}
+// for(const image of track.getElementsByClassName("image")) {
+//   image.animate({
+//     objectPosition: `${100 + nextPercentage}% center`
+//   }, { duration: 1200, fill: "forwards" });
+// }
+// }
 
-/* -- Had to add extra lines for touch events -- */
+// /* -- Had to add extra lines for touch events -- */
 
-window.onmousedown = e => handleOnDown(e);
+// window.onmousedown = e => handleOnDown(e);
 
-window.ontouchstart = e => handleOnDown(e.touches[0]);
+// window.ontouchstart = e => handleOnDown(e.touches[0]);
 
-window.onmouseup = e => handleOnUp(e);
+// window.onmouseup = e => handleOnUp(e);
 
-window.ontouchend = e => handleOnUp(e.touches[0]);
+// window.ontouchend = e => handleOnUp(e.touches[0]);
 
-window.onmousemove = e => handleOnMove(e);
+// window.onmousemove = e => handleOnMove(e);
 
-window.ontouchmove = e => handleOnMove(e.touches[0]);
+// window.ontouchmove = e => handleOnMove(e.touches[0]);
 
-})
-// FAQ JS
+// })
 
-(function timer() {
-    const second = 1000,
-      minute = second * 60,
-      hour = minute * 60,
-      day = hour * 24;
-  
-  
-    let today = new Date(),
-      dd = String(today.getDate()).padStart(2, "0"),
-      mm = String(today.getMonth() + 1).padStart(2, "0"),
-      yyyy = today.getFullYear(),
-      nextYear = yyyy,
-      dayMonth = "3/11/",
-      birthday = dayMonth + yyyy;
-  
-    today = mm + "/" + dd + "/" + yyyy;
-    if (today > birthday) {
-      birthday = dayMonth + nextYear;
-    }
-    //end
-  
-    const countDown = new Date(birthday).getTime(),
-      x = setInterval(function () {
-  
-        const now = new Date().getTime(),
-          distance = countDown - now;
-            // console.log(distance/(day));
-        document.getElementById("days").innerText = pad(Math.floor(distance / (day)));
-        document.getElementById("hours").innerText = pad(Math.floor((distance % (day)) / (hour)));
-        document.getElementById("minutes").innerText = pad(Math.floor((distance % (hour)) / (minute)));
-        document.getElementById("seconds").innerText = pad(Math.floor((distance % (minute)) / second));
-  
-        //do something later when date is reached
-        if (distance < 0) {
-          document.getElementById("headline").innerText = "Event is over now!";
-          document.getElementById("countdown").style.display = "none";
-          document.getElementById("content").style.display = "block";
-          clearInterval(x);
-        }
-        //seconds
-      }, 0)
-  }());
-
-function pad(number) {
-    return ("0" + number).slice(-2);
-}
-
-
-// FAQ JS FINISH
 
 // JS for time line---------------------------------------- 
 
@@ -185,8 +135,58 @@ else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
     circle9.style.borderStyle = "solid";
     circle9.setAttribute("style", " border:red 1px solid;background:#4AE5EF content-box; z-index:5; font-weight:bold")
 }
-
+console.log('first')
 // -----------------------------------------------------------------------------------------------------------------
+
+
+(function timer() {
+    const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+  
+  
+    let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy,
+      dayMonth = "3/11/",
+      birthday = dayMonth + yyyy;
+  
+    today = mm + "/" + dd + "/" + yyyy;
+    if (today > birthday) {
+      birthday = dayMonth + nextYear;
+    }
+    //end
+  
+    const countDown = new Date(birthday).getTime(),
+      x = setInterval(function () {
+  
+        const now = new Date().getTime(),
+          distance = countDown - now;
+            // console.log(distance/(day));
+        document.getElementById("days").innerText = pad(Math.floor(distance / (day)));
+        document.getElementById("hours").innerText = pad(Math.floor((distance % (day)) / (hour)));
+        document.getElementById("minutes").innerText = pad(Math.floor((distance % (hour)) / (minute)));
+        document.getElementById("seconds").innerText = pad(Math.floor((distance % (minute)) / second));
+  
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "Event is over now!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+
+function pad(number) {
+    return ("0" + number).slice(-2);
+}
+
+
 
 const $ = str => document.querySelector(str);
 const $$ = str => document.querySelectorAll(str);

@@ -12,6 +12,13 @@
     user-select: none; /* Standard syntax */
 }
 
+/* scroll bar customize */
+::-webkit-scrollbar{
+    width: 8px;
+    display: none;
+    background-color: transparent;
+  }
+
 section{
     padding-top: 80px;
 }
@@ -189,6 +196,20 @@ body{
     z-index: 20;
     box-shadow: 0px 2px 4px rgba(16, 23, 52, 0.1);
 }
+
+.scroll{
+    position: absolute;
+    height: 5px;
+    bottom: -5px;
+    width: 100%;
+    
+}
+.scroll_inner{
+    width: 50%;
+    height: 100%;
+    background-color: var(--text-primary) ;
+}
+
 .nav_bar > div.container{
     display: flex;
     flex-direction: row;
@@ -434,12 +455,30 @@ body{
     .spon_coll{
         font-size: 1.2rem;
     }
+    .the_thing{
+        top: auto;
+        margin-top: 100px;
+    }
+    .contact{
+        margin-left: 0;
+    }
+    .contact,.remove{
+        bottom: 80px;
+        width: 120px;
+        gap: 15px;
+        height: 35px;
+    }
+    .nav_innerve{
+        height: 20%;
+    }
 
 }
 @media only screen and (max-width: 400px) {
     .heading{
         font-size: 15px;
     }
+    
+    
     .heading svg{
         height: 14px !important;
     }
@@ -1115,7 +1154,7 @@ a{
     justify-content: center;
     margin: 20px auto;
     padding: 20px;
-    overflow-x: auto;
+    overflow-x: hidden;
     font-family: 'Outfit';
     overflow-x: hidden;
   }
@@ -1432,7 +1471,7 @@ a{
     background-color: #7561FF;
     padding: 10px;
     text-decoration: none;
-    
+    transition: .3s ease;
   }
   .contactimgs{
     gap: 1rem;
@@ -1529,6 +1568,13 @@ a{
     width: 100%;
     font-size: 1.2rem;
     padding: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+    .lower{
+        font-size: 1.2rem !important;
+        padding: 15px;
+    }
 }
 
 
@@ -2335,7 +2381,7 @@ a{
       box-sizing: border-box;
       /* height: 851px; */
     }
-    .faq-section{
+    .faq-section,.container{
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -2361,7 +2407,11 @@ a{
         font-size: 13px;
       }
   }
-  
+  .fa:hover{
+    background-color: #fff;
+    color: #7561ff;
+  }
+
   @media screen and (max-width: 360px) {
     .faq-block {
       box-sizing: border-box;
