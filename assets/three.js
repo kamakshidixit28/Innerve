@@ -40,10 +40,11 @@ var obj;
         function moveCamera() {
             const scroll = document.querySelector('.scroll_inner');
             let per = (scrollY/height)*100;
-            console.log(per)
             scroll.style.width = `${per}%`;
         const t = document.body.getBoundingClientRect().top;
-        if(window.innerHeight < scrollY){
+        let hp = document.querySelector('.timer-wrapper').clientHeight;
+        console.log(hp)
+        if(window.innerHeight-hp/2 < scrollY){
             document.querySelector('.logo3D').style.zIndex = -10;
             document.querySelector('.logo3D').style.opacity = '.2';
         }

@@ -50,6 +50,7 @@ section{
     margin: auto;
     z-index: -5;
     transform: translateX(18%);
+    transition: opacity .4s ease-in-out;
     /* z-index: 100 !important; */
     /* width: 100% !important; */
     /* height: 100% !important; */
