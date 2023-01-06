@@ -1117,6 +1117,7 @@ a{
     padding: 20px;
     overflow-x: auto;
     font-family: 'Outfit';
+    overflow-x: hidden;
   }
   .timline-box{
 
@@ -1134,6 +1135,10 @@ a{
   .timeline_card {
     position: relative;
     min-width: 300px;
+  }
+
+  .timeline-card-img{
+    max-width: 350px;
   }
   
   /* setting padding based on even or odd */
@@ -1177,6 +1182,12 @@ a{
 
   }
   
+@media only screen and (max-width: 768px){
+    .timeline-2{
+        display: none;
+    }
+}
+
   /* Setting the border of top, bottom, right */
   .timeline_card:nth-child(even)::before {
     right: 0;
