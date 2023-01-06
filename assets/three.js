@@ -9,7 +9,7 @@ var obj;
         let can = document.querySelector('.hero_right')
         renderer.domElement.classList.add('logo3D')
         document.body.appendChild( renderer.domElement );
-
+        let canva = document.querySelector('.logo3D');
         var loader = new GLTFLoader();
         loader.load( './assets/three/mod.gltf', function ( gltf ) {
             obj = gltf.scene;
@@ -32,6 +32,7 @@ var obj;
 
         camera.position.set(0,0,20);
 
+        
         // obj.position.set(0,0,0);
         var height = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
             document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
@@ -43,10 +44,12 @@ var obj;
             scroll.style.width = `${per}%`;
         const t = document.body.getBoundingClientRect().top;
         if(window.innerHeight < scrollY){
-            document.querySelector('.logo3D').style.display = 'none';
+            document.querySelector('.logo3D').style.zIndex = -10;
+            document.querySelector('.logo3D').style.opacity = '.2';
         }
         else{
             document.querySelector('.logo3D').style.display = 'block';
+            document.querySelector('.logo3D').style.opacity = '1';
         }
         }
 
