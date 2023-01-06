@@ -2537,3 +2537,34 @@ a{
   /* ---------------------FAQ SECTION ENDS----------------- */
 
 
+/* landscape media query codes */
+
+@media screen and (min-device-width: 768.5px) and (orientation: landscape) {
+    .hero{
+        margin-top: 80px;
+    }
+  }
+
+@media screen and (max-device-width: 1000px) and (orientation: landscape) {
+
+    .logo3D{
+        top: 80px;
+        bottom: 0;
+    }
+    .nav_list{
+        flex-wrap: wrap-reverse;
+        margin-right: 200px;
+    }
+  }
+  @media screen and (max-device-width: 600px) and (orientation: landscape) {
+    .nav-link{
+        font-size: 12px;
+    }
+    .nav_list{
+        padding-bottom: 70px !important;
+        padding-top: 20px;
+    }
+    .coll{
+        bottom: 25px !important;
+    }
+  }
