@@ -2539,7 +2539,7 @@ a{
 
 /* landscape media query codes */
 
-@media screen and (min-device-width: 768.5px) and (orientation: landscape) {
+/* @media screen and (min-device-width: 768.5px) and (orientation: landscape) {
     .hero{
         margin-top: 80px;
     }
@@ -2567,4 +2567,4 @@ a{
     .coll{
         bottom: 25px !important;
     }
-  }
+  } */
