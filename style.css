@@ -2092,7 +2092,7 @@ a{
   }
   
   .faq-section .faq-answer-block {
-    background: rgb(254, 68, 116,.8) url(images/faq.png) no-repeat center;
+    background: rgb(254, 68, 116) url(images/faq.png) no-repeat center;
     min-height: 100%;
     position: relative;
     transform: translateX(-2px);

@@ -44,10 +44,14 @@ var obj;
             scroll.style.width = `${per}%`;
         const t = document.body.getBoundingClientRect().top;
         let hp = document.querySelector('.timer-wrapper').clientHeight;
-        console.log(hp)
+        if(window.innerHeight < scrollY){
+            document.querySelector('.logo3D').style.display = 'none';
+        }
         if(window.innerHeight-hp/2 < scrollY){
             document.querySelector('.logo3D').style.zIndex = -10;
-            document.querySelector('.logo3D').style.opacity = '.2';
+            document.querySelector('.logo3D').style.opacity = '0';
+            // setTimeout(function(){ document.querySelector('.logo3D').style.display = 'none' }, 1000);
+            // document.querySelector('.logo3D').style.display = 'none';
         }
         else{
             document.querySelector('.logo3D').style.display = 'block';
