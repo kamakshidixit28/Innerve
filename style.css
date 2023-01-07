@@ -201,8 +201,8 @@ body{
 
 .scroll{
     position: absolute;
-    height: 5px;
-    bottom: -5px;
+    height: 2px;
+    bottom: -2px;
     width: 100%;
     
 }
