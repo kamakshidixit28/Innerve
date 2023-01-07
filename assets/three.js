@@ -7,6 +7,7 @@ var obj;
         let canvas = document.querySelector('canvas')
         renderer.setSize( window.innerWidth, window.innerHeight );
         let can = document.querySelector('.hero_right')
+
         renderer.domElement.classList.add('logo3D')
         document.body.appendChild( renderer.domElement );
         let canva = document.querySelector('.logo3D');

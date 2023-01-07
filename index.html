@@ -184,7 +184,7 @@
         <div class="row mx-auto">
             
             <div class="row mt-2">
-                <div class="pouter pos col-md-4 order-md-1 order-2 p-5 ">
+                <div class="pouter pos col-md-4 order-md-1 order-2 p-5 " data-tilt>
                     <div class="prizefill silverfill " id="sp">
                         <div><img src="images/silver.svg" alt="" width="100%"></div>
                     </div>
@@ -198,7 +198,7 @@
                         <div class="prizeinfo2 silverbox1 col-md-8 col-sm-6 col-5"></div>
                     </div>
                 </div>
-                <div class="pouter pog col-md-4 order-md-2 order-1 p-5 ">
+                <div class="pouter pog col-md-4 order-md-2 order-1 p-5 " data-tilt>
                     <div class="prizefill goldfill">
                         <div><img src="images/gold.svg" alt="" width="100%"></div>
                     </div>
@@ -212,7 +212,7 @@
                         <div class="prizeinfo2 goldbox1 col-md-8 col-sm-6 col-5"></div>
                     </div>
                 </div>
-                <div class="pouter col-md-4 order-md-3 order-3 p-5">
+                <div class="pouter col-md-4 order-md-3 order-3 p-5" data-tilt>
                     <div class="prizefill bronzefill">
                         <div><img src="images/bronze.svg" alt="" width="100%"></div>
                     </div>
@@ -369,6 +369,15 @@
         Event Schedule
     </div>
     <div class="timeline-container d-flex justify-content-between align-items-center">
+        
+        <div class="timeline timeline-2">
+            <div class="timeline-box d-flex flex-column justify-content-between align-items-center">
+                <div class="timeline-card-img my-5"><img src="images/timeline-img-1.png" alt="" class="img-fluid"></div>
+                <div class="timeline-card-img my-5"><img src="images/timeline-img-2.png" alt="" class="img-fluid"></div>
+                <div class="timeline-card-img my-5"><img src="images/timeline-img-3.png" alt="" class="img-fluid"></div>
+            </div>
+        </div>
+
         <div class="timeline mt-4">
             <div class="timline-box ">
                 <div class="outer">
@@ -425,13 +434,7 @@
                 </div>
             </div>
         </div>
-        <div class="timeline timeline-2">
-            <div class="timeline-box d-flex flex-column justify-content-between align-items-center">
-                <div class="timeline-card-img my-5"><img src="images/timeline-img-1.png" alt="" class="img-fluid"></div>
-                <div class="timeline-card-img my-5"><img src="images/timeline-img-2.png" alt="" class="img-fluid"></div>
-                <div class="timeline-card-img my-5"><img src="images/timeline-img-3.png" alt="" class="img-fluid"></div>
-            </div>
-        </div>
+
     </div>
 </section>
 
@@ -880,6 +883,9 @@
 
 <!-- Footer section ends -->
 
+<!-- title js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.js" integrity="sha512-Mfa0FGPN33LtU+puEaoEn1kAIFJYm2kMsipPbFefhcqz9lLVzxkN/NDFpaPUdmQuisESKXisMit5UkloQ8OtrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <!-- Aos lib -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
@@ -897,7 +903,7 @@
 <!-- threejs render files -->
 <script src="./assets/three/three.js"></script>
 <script src="./assets/three.js" type="module"></script>
-            
+       
 </body>
 </html>
 

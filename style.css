@@ -576,6 +576,8 @@ background: #1B1A27;
 
 .pouter{
     position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
     /* z-index: 1000; */
     
 }
@@ -614,6 +616,7 @@ background: #1B1A27;
 
 }
 .ptext{
+    transform: translateZ(20px);
     padding-left: 45px;
     padding-right: 45px;
 }
@@ -2089,7 +2092,7 @@ a{
   }
   
   .faq-section .faq-answer-block {
-    background: #FE4474 url(images/faq.png) no-repeat center;
+    background: rgb(254, 68, 116,.8) url(images/faq.png) no-repeat center;
     min-height: 100%;
     position: relative;
     transform: translateX(-2px);
