@@ -85,57 +85,33 @@ var circle1 = document.getElementById('circle1');
 var circle2 = document.getElementById('circle2');
 var x = new Date();
 if (x.getDate() >= 15 && x.getDate() <= 31 && x.getMonth() == 11) {
-    // circle1.style.backgroundColor = 'green';
-    // circle1.style.fontWeight = "bold";
-    circle1.style.borderStyle = "solid";
-    // circle1.style.css({
-    //     "background": "green"
-        
-    // })
-    // circle1.setAttribute("style", " border:red 1px solid;background:#4AE5EF content-box; z-index:5; font-weight:bold")
-    circle1.setAttribute("style", "background: #2590F2;border: 3px solid #FAFAFD;box-shadow: 1px 0px 2px #2590F2, -1px 0px 2px #2A966F;")    
-    
+   
 }
 else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle2.style.borderStyle = "solid";
-    circle2.setAttribute("style", " border:red 1px solid;background:#7561FF content-box; z-index:5; font-weight:bold")
 }
 
 else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle3.style.borderStyle = "solid";
-    circle3.setAttribute("style", " border:red 1px solid;background:#2A966F content-box; z-index:5; font-weight:bold")
 }
 
 else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle4.style.borderStyle = "solid";
-    circle4.setAttribute("style", " border:red 1px solid;background:#2590F2 content-box; z-index:5; font-weight:bold")
 }
 
 else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle5.style.borderStyle = "solid";
-    circle5.setAttribute("style", " border:red 1px solid;background:#F72585 content-box; z-index:5; font-weight:bold")
 }
 
 else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle6.style.borderStyle = "solid";
-    circle6.setAttribute("style", " border:red 1px solid;background:#A8DE45 content-box; z-index:5; font-weight:bold")
 }
 
 else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle7.style.borderStyle = "solid";
-    circle7.setAttribute("style", " border:red 1px solid;background:#4AE5EF content-box; z-index:5; font-weight:bold")
 }
 
 else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle8.style.borderStyle = "solid";
-    circle8.setAttribute("style", " border:red 1px solid;background:#7561FF content-box; z-index:5; font-weight:bold")
 }
 
 else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle9.style.borderStyle = "solid";
-    circle9.setAttribute("style", " border:red 1px solid;background:#4AE5EF content-box; z-index:5; font-weight:bold")
 }
-console.log('first')
+
+
 // -----------------------------------------------------------------------------------------------------------------
 
 

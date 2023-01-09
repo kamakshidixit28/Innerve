@@ -1324,35 +1324,35 @@ a{
     }
 }
 
-  /* Setting the border of top, bottom, right */
-  .timeline_card:nth-child(even)::before {
+/* Setting the border of top, bottom, right */
+.timeline_card:nth-child(even)::before {
     right: 0;
     top: -2px;
     bottom: -2px;
     border-width: 4px 4px 4px 0;
     border-radius: 0 20px 20px 0;
-  }
-  
-  /* Removing the border if it is the first timeline_card */
-  .timeline_card:first-child::before {
+}
+
+/* Removing the border if it is the first timeline_card */
+.timeline_card:first-child::before {
     border-top: 0;
     border-top-left-radius: 0;
-  }
-  
-  /* Removing the border if it is the last timeline_card  and it's odd */
-  .timeline_card:last-child:nth-child(odd)::before {
+}
+
+/* Removing the border if it is the last timeline_card  and it's odd */
+.timeline_card:last-child:nth-child(odd)::before {
     border-bottom: 0;
     border-bottom-left-radius: 0;
-  }
-  
-  /* Removing the border if it is the last timeline_card  and it's even */
-  .timeline_card:last-child:nth-child(even)::before {
+}
+
+/* Removing the border if it is the last timeline_card  and it's even */
+.timeline_card:last-child:nth-child(even)::before {
     border-bottom: 0;
     border-bottom-right-radius: 0;
-  }
-  
-  /* Information about the timeline */
-  .info {
+}
+
+/* Information about the timeline */
+.info {
     display: flex;
     flex-direction: column;
     background: #F4F4F5;
@@ -1360,20 +1360,20 @@ a{
     border: 2px solid #E1E1E4;
     border-radius: 10px;
     padding: 10px;
-  }
-  .info p{
+}
+.info p{
     font-size: 16px;
     font-family: 'Outfit';
-  }
-  
-  /* Title of the timeline_card */
-  .title {
+}
+
+/* Title of the timeline_card */
+.title {
     color: orangered;
     position: relative;
-  }
-  
-  /* Timeline dot  */
-  .title::before {
+}
+
+/* Timeline dot  */
+.title::before {
     content: "";
     position: absolute;
     width: 10px;
@@ -1382,37 +1382,58 @@ a{
     background: white;
     border-radius: 999px;
     /* border: 3px solid orangered; */
-  }
-  
-  /* text right if the timeline_card is even  */
-  .timeline_card:nth-child(even) > .info > .title {
+}
+
+/* text right if the timeline_card is even  */
+.timeline_card:nth-child(even) > .info > .title {
     text-align: right;
-  }
-  .timeline_card:nth-child(even) > .info > p {
+}
+.timeline_card:nth-child(even) > .info > p {
     text-align: right;
-  }
-  
-  /* setting dot to the left if the timeline_card is odd */
-  .timeline_card:nth-child(odd) > .info > .title::before {
+}
+
+/* setting dot to the left if the timeline_card is odd */
+.timeline_card:nth-child(odd) > .info > .title::before {
     left: -45px;
-  }
-  
-  /* setting dot to the right if the timeline_card is odd */
-  .timeline_card:nth-child(even) > .info > .title::before {
+}
+
+/* setting dot to the right if the timeline_card is odd */
+.timeline_card:nth-child(even) > .info > .title::before {
     right: -45px;
-  }
-  .timeline_svg{
+}
+.timeline_svg{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     text-align: center;
-    overflow: hidden;
-    
-  }
+    overflow: hidden;    
+}
 
-  
+.timeline_arrow{
+    display: none;
+    position: absolute;
+    right: -20px;
+    top: calc(50% - 10px) ;
+    width: 0; 
+    height: 0; 
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;     
+    border-right:8px solid #2590F2; 
+}
+
+.timeline_card:nth-child(even) .timeline_arrow{
+    right: 0px;
+    border-right: none;
+    left: -20px;
+    border-left:8px solid #2590F2; 
+}
+
+.timeline_active .timeline_arrow{
+    display: block;
+}
+
 /* ------------------------------------------------------------------------------------------------------- */
 
 
