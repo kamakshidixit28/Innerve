@@ -643,7 +643,7 @@ background: #1B1A27;
     border-radius: 5px;
 }
 .silverfill:hover{
-    box-shadow: 10px 10px 0px #C2C2C2;
+    box-shadow: 5px 5px 0px #C2C2C2;
     cursor: pointer;
 }
 .silver{
@@ -662,7 +662,7 @@ background: #1B1A27;
 }
 
 .goldfill:hover{
-    box-shadow: 10px 10px 0px #F7C866;
+    box-shadow: 5px 5px 0px #F7C866;
     cursor: pointer;
 }
 
@@ -680,7 +680,7 @@ background: #1B1A27;
     border-radius: 5px
 }
 .bronzefill:hover{
-    box-shadow: 10px 10px 0px #CC7927;
+    box-shadow: 5px 5px 0px #CC7927;
     cursor: pointer;
 }
 
@@ -1414,13 +1414,13 @@ a{
 .timeline_arrow{
     display: none;
     position: absolute;
-    right: -20px;
-    top: calc(50% - 10px) ;
+    right: -10px;
+    top: calc(50% - 15px) ;
     width: 0; 
     height: 0; 
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;     
-    border-right:8px solid #2590F2; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;     
+    border-right:18px solid #2590F2; 
 }
 
 .timeline_card:nth-child(even) .timeline_arrow{
@@ -1432,6 +1432,10 @@ a{
 
 .timeline_active .timeline_arrow{
     display: block;
+}
+.timeline_active .info{
+    background-color: #E1E1E4;
+    border-radius: 10px 5px 5px 10px;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
