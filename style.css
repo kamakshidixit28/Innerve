@@ -1427,8 +1427,8 @@ a{
 .timeline_card:nth-child(even) .timeline_arrow{
     right: 0px;
     border-right: none;
-    left: -20px;
-    border-left:8px solid #2590F2; 
+    left: -10px;
+    border-left:18px solid #2590F2; 
 }
 
 .timeline_active .timeline_arrow{
@@ -1436,7 +1436,7 @@ a{
 }
 .timeline_active .info{
     background-color: #E1E1E4;
-    border-radius: 10px 5px 5px 10px;
+    /* border-radius: 10px 5px 5px 10px; */
 }
 
 /* ------------------------------------------------------------------------------------------------------- */

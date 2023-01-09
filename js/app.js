@@ -87,9 +87,9 @@ let xDate = x.getDate();
 let xMonth = x.getMonth();
 let xTime = x.getHours();
 
-if(((xDate >= 20 || xDate <=31) && xMonth === 0) 
+if(((xDate >= 20 && xDate <=31) && xMonth === 0) 
     ||
-    ((xDate >= 1 || xDate <=20) && xMonth === 1)
+    ((xDate >= 1 && xDate <=20) && xMonth === 1)
   ){
   tCards[0].setAttribute("class", "timeline_card timeline_active")
   tCards[1].setAttribute("class", "timeline_card")
@@ -101,7 +101,7 @@ if(((xDate >= 20 || xDate <=31) && xMonth === 0)
   tCards[7].setAttribute("class", "timeline_card")
   }
 
-else if((xDate >= 21 || xDate <=28) && xMonth === 1){
+else if((xDate >= 21 && xDate <=28) && xMonth === 1){
   tCards[0].setAttribute("class", "timeline_card")
   tCards[1].setAttribute("class", "timeline_card timeline_active")
   tCards[2].setAttribute("class", "timeline_card")
@@ -112,7 +112,7 @@ else if((xDate >= 21 || xDate <=28) && xMonth === 1){
   tCards[7].setAttribute("class", "timeline_card")
   }
 
-else if(((xDate >= 1 || xDate <11) && xMonth === 2)
+else if(((xDate >= 1 && xDate <11) && xMonth === 2)
         || 
         (xDate === 11 && xMonth === 2 && xTime < 14)
   ){
