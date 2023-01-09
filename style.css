@@ -1198,14 +1198,105 @@ a{
     content: "";
     position: absolute;
     width: 50%;
-    border: solid orangered;
+    /* border: solid orangered; */
   }
+
+  /* Timeline Card Individual Colours */
+
+  /* Card 1 */
+  .timeline_card:nth-child(1)::before{
+    border: solid #2590F2;
+  }
+  .timeline_card:nth-child(1) .title{
+    color: #2590F2;
+  }
+  .timeline_card:nth-child(1) .title::before{
+    border: 3px solid #2590F2; 
+  }
+
+  /* Card 2 */
+  .timeline_card:nth-child(2)::before{
+    border: solid #2590F2;
+  }
+  .timeline_card:nth-child(2) .title{
+    color: #2590F2;
+  }
+  .timeline_card:nth-child(2) .title::before{
+    border: 3px solid #2590F2; 
+  }
+
+  /* Card 3 */
+  .timeline_card:nth-child(3)::before{
+    border: solid #6B66DA;
+  }
+  .timeline_card:nth-child(3) .title{
+    color: #6B66DA;
+  }
+  .timeline_card:nth-child(3) .title::before{
+    border: 3px solid #6B66DA; 
+  }
+
+  /* Card 4 */
+  .timeline_card:nth-child(4)::before{
+    border: solid #6B66DA;
+  }
+  .timeline_card:nth-child(4) .title{
+    color: #6B66DA;
+  }
+  .timeline_card:nth-child(4) .title::before{
+    border: 3px solid #6B66DA; 
+  }
+
+  /* Card 5 */
+  .timeline_card:nth-child(5)::before{
+    border: solid #E73B65;
+  }
+  .timeline_card:nth-child(5) .title{
+    color: #E73B65;
+  }
+  .timeline_card:nth-child(5) .title::before{
+    border: 3px solid #E73B65; 
+  }
+
+   /* Card 6 */
+  .timeline_card:nth-child(6)::before{
+    border: solid #E73B65;
+  }
+  .timeline_card:nth-child(6) .title{
+    color: #E73B65;
+  }
+  .timeline_card:nth-child(6) .title::before{
+    border: 3px solid #E73B65; 
+  }
+  
+   /* Card 7 */
+  .timeline_card:nth-child(7)::before{
+    border: solid #E73B65;
+  }
+  .timeline_card:nth-child(7) .title{
+    color: #E73B65;
+  }
+  .timeline_card:nth-child(7) .title::before{
+    border: 3px solid #E73B65; 
+  }
+
+   /* Card 8 */
+  .timeline_card:nth-child(8)::before{
+    border: solid #F84F39;
+  }
+  .timeline_card:nth-child(8) .title{
+    color: #F84F39;
+  }
+  .timeline_card:nth-child(8) .title::before{
+    border: 3px solid #F84F39; 
+  }
+
   
   /* Setting the border of top, bottom, left */
   .timeline_card:nth-child(odd)::before {
     left: 0px;
-    top: -4px;
-    bottom: -3.8px;
+    top: -2px;
+    bottom: -2px;
     border-width: 4px 0 4px 4px;
     border-radius: 20px 0 0 20px;
   }
@@ -1236,8 +1327,8 @@ a{
   /* Setting the border of top, bottom, right */
   .timeline_card:nth-child(even)::before {
     right: 0;
-    top: 0;
-    bottom: 0;
+    top: -2px;
+    bottom: -2px;
     border-width: 4px 4px 4px 0;
     border-radius: 0 20px 20px 0;
   }
@@ -1264,8 +1355,9 @@ a{
   .info {
     display: flex;
     flex-direction: column;
-    background: #333;
+    background: #F4F4F5;
     color: gray;
+    border: 2px solid #E1E1E4;
     border-radius: 10px;
     padding: 10px;
   }
@@ -1289,7 +1381,7 @@ a{
     top: 20px;
     background: white;
     border-radius: 999px;
-    border: 3px solid orangered;
+    /* border: 3px solid orangered; */
   }
   
   /* text right if the timeline_card is even  */
@@ -1302,12 +1394,12 @@ a{
   
   /* setting dot to the left if the timeline_card is odd */
   .timeline_card:nth-child(odd) > .info > .title::before {
-    left: -43px;
+    left: -45px;
   }
   
   /* setting dot to the right if the timeline_card is odd */
   .timeline_card:nth-child(even) > .info > .title::before {
-    right: -43px;
+    right: -45px;
   }
   .timeline_svg{
     position: fixed;
