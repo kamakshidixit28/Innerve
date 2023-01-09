@@ -81,35 +81,101 @@ link.forEach(function (link) {
 
 // JS for time line---------------------------------------- 
 
-var circle1 = document.getElementById('circle1');
-var circle2 = document.getElementById('circle2');
-var x = new Date();
-if (x.getDate() >= 15 && x.getDate() <= 31 && x.getMonth() == 11) {
-   
-}
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-}
+const tCards = document.querySelectorAll('.timeline_card');
+const x = new Date();
+let xDate = x.getDate();
+let xMonth = x.getMonth();
+let xTime = x.getHours();
 
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-}
+if(((xDate >= 20 || xDate <=31) && xMonth === 0) 
+    ||
+    ((xDate >= 1 || xDate <=20) && xMonth === 1)
+  ){
+  tCards[0].setAttribute("class", "timeline_card timeline_active")
+  tCards[1].setAttribute("class", "timeline_card")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
 
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-}
+else if((xDate >= 21 || xDate <=28) && xMonth === 1){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card timeline_active")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
 
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-}
+else if(((xDate >= 1 || xDate <11) && xMonth === 2)
+        || 
+        (xDate === 11 && xMonth === 2 && xTime < 14)
+  ){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card")
+  tCards[2].setAttribute("class", "timeline_card timeline_active")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
 
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-}
-
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-}
-
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-}
-
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-}
+else if((xDate === 11 && xMonth === 2 && xTime >= 14 && xTime <= 15)){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card timeline_active")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
+else if((xDate === 11 && xMonth === 2 && xTime >= 15 && xTime <= 20)){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card timeline_active")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
+else if((xDate === 12 && xMonth === 2 && xTime <= 09)){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card timeline_active")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
+else if((xDate === 12 && xMonth === 2 && xTime >09 && xTime <= 13)){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card timeline_active")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
+else if((xDate === 12 && xMonth === 2 && xTime >13 && xTime <= 17)){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card timeline_active")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card timeline_active")
+  }
 
 
 // -----------------------------------------------------------------------------------------------------------------
