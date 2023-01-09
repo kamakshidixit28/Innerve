@@ -280,6 +280,9 @@ function leave(color,idx){
         if( idx == 0){
           myChart.data.datasets[0].backgroundColor[2] = '#F84F39cc';
         }
+        if( idx == 4){
+          myChart.data.datasets[0].backgroundColor[4] = '#F84F39cc';
+        }
         myChart.update();
       }
     }
