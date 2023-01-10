@@ -837,6 +837,10 @@ background: #1B1A27;
 }
 @media only screen and (max-width: 412px){
     
+    .pouter{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
     .ptext{
         padding-left: 20px;
         padding-right: 20px;
@@ -867,8 +871,8 @@ background: #1B1A27;
 }
 @media only screen and (max-width: 307px){
     .pouter{
-        padding-left: 40px !important;
-        padding-right: 40px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
     }
     .pinfo{
         font-size: 8px;
@@ -1017,6 +1021,9 @@ a{
     }
     .theme_text {
         font-size : 9px;
+    }
+    .theme_text nobr{        
+        white-space: pre-wrap !important;
     }
     .theme_active_text{
         font-size: 12px;
