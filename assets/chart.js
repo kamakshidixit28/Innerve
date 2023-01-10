@@ -235,52 +235,55 @@ const myChart1 = document.querySelector("#myChart");
 clickhandler("#F84F39cccc",2)
 
 function clickhandler(color, idx) {
-  show=idx;
-  console.log(show);
-  for (let i = 0; i < titles.length; i++) {
-    if (i==idx) {
-      titles[i].classList.add("theme_active_text");
-    } else {
-      titles[i].classList.remove("theme_active_text");
+    show=idx;
+    console.log(show);
+    for (let i = 0; i < titles.length; i++) {
+      if (i==idx) {
+        titles[i].classList.add("theme_active_text");
+      } else {
+        titles[i].classList.remove("theme_active_text");
+      }
     }
-  }
-  myChart1.style.backgroundImage = `url("./svg/${idx}.png")`;
-  for (let i = 0; i < 8; i++) {
-    if (i == idx) {
-      myChart.data.datasets[0].backgroundColor[idx] = color.slice(0,color.length-2);
-      myChart.data.datasets[1].backgroundColor[idx] = color.slice(0,color.length-2);
-      myChart.data.datasets[0].backgroundColor[idx+2] = color.slice(0,color.length-2);
-      myChart.data.datasets[0].borderWidth[idx] = 0;
-      myChart.data.datasets[1].borderWidth[idx] = 0;
-      myChart.data.datasets[0].borderWidth[idx+2] = 0;
-      myChart.update();
+    myChart1.style.backgroundImage = `url("./svg/${idx}.png")`;
+    for (let i = 0; i < 8; i++) {
+      if (i == idx) {
+        myChart.data.datasets[0].backgroundColor[idx] = color.slice(0,color.length-2);
+        myChart.data.datasets[1].backgroundColor[idx] = color.slice(0,color.length-2);
+        myChart.data.datasets[0].backgroundColor[idx+2] = color.slice(0,color.length-2);
+        myChart.data.datasets[0].borderWidth[idx] = 0;
+        myChart.data.datasets[1].borderWidth[idx] = 0;
+        myChart.data.datasets[0].borderWidth[idx+2] = 0;
+        myChart.update();
+      }
     }
-  }
 }
 
 
 function leave(color,idx){
-  show=2;
-  myChart1.style.backgroundImage = `url("./svg/2.png")`;
-  for (let i = 0; i < titles.length; i++) {
-    if (i==2) {
-      titles[i].classList.add("theme_active_text");
-    } else {
-      titles[i].classList.remove("theme_active_text");
-    }
-  }
-  for (let i = 0; i < 8; i++) {
-    if (i == idx) {
-      myChart.data.datasets[0].backgroundColor[idx] = color;
-      myChart.data.datasets[0].backgroundColor[idx+2] = color;
-      myChart.data.datasets[1].backgroundColor[idx] = color;
-      myChart.data.datasets[0].borderWidth[idx] = 5;
-      myChart.data.datasets[1].borderWidth[idx] = 5;
-      myChart.data.datasets[0].borderWidth[idx+2] = 5;
-      if( idx == 0){
-        myChart.data.datasets[0].backgroundColor[2] = '#F84F39cc';
+    show=2;
+    myChart1.style.backgroundImage = `url("./svg/2.png")`;
+    for (let i = 0; i < titles.length; i++) {
+      if (i==2) {
+        titles[i].classList.add("theme_active_text");
+      } else {
+        titles[i].classList.remove("theme_active_text");
       }
-      myChart.update();
     }
-  }
+    for (let i = 0; i < 8; i++) {
+      if (i == idx) {
+        myChart.data.datasets[0].backgroundColor[idx] = color;
+        myChart.data.datasets[0].backgroundColor[idx+2] = color;
+        myChart.data.datasets[1].backgroundColor[idx] = color;
+        myChart.data.datasets[0].borderWidth[idx] = 5;
+        myChart.data.datasets[1].borderWidth[idx] = 5;
+        myChart.data.datasets[0].borderWidth[idx+2] = 5;
+        if( idx == 0){
+          myChart.data.datasets[0].backgroundColor[2] = '#F84F39cc';
+        }
+        if( idx == 4){
+          myChart.data.datasets[0].backgroundColor[4] = '#F84F39cc';
+        }
+        myChart.update();
+      }
+    }
 }

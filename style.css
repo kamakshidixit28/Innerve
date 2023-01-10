@@ -366,7 +366,8 @@ body{
     width: 25rem;
     left : 70%;
     z-index: -10;
-    transform: translateY(-20%);
+    top: 35%;
+    transform: translateY(50%);
 }
 .timer_vector{
     position: absolute;
@@ -643,7 +644,7 @@ background: #1B1A27;
     border-radius: 5px;
 }
 .silverfill:hover{
-    box-shadow: 10px 10px 0px #C2C2C2;
+    box-shadow: 5px 5px 0px #C2C2C2;
     cursor: pointer;
 }
 .silver{
@@ -662,7 +663,7 @@ background: #1B1A27;
 }
 
 .goldfill:hover{
-    box-shadow: 10px 10px 0px #F7C866;
+    box-shadow: 5px 5px 0px #F7C866;
     cursor: pointer;
 }
 
@@ -680,7 +681,7 @@ background: #1B1A27;
     border-radius: 5px
 }
 .bronzefill:hover{
-    box-shadow: 10px 10px 0px #CC7927;
+    box-shadow: 5px 5px 0px #CC7927;
     cursor: pointer;
 }
 
@@ -1198,14 +1199,105 @@ a{
     content: "";
     position: absolute;
     width: 50%;
-    border: solid orangered;
+    /* border: solid orangered; */
   }
+
+  /* Timeline Card Individual Colours */
+
+  /* Card 1 */
+  .timeline_card:nth-child(1)::before{
+    border: solid #2590F2;
+  }
+  .timeline_card:nth-child(1) .title{
+    color: #2590F2;
+  }
+  .timeline_card:nth-child(1) .title::before{
+    border: 3px solid #2590F2; 
+  }
+
+  /* Card 2 */
+  .timeline_card:nth-child(2)::before{
+    border: solid #2590F2;
+  }
+  .timeline_card:nth-child(2) .title{
+    color: #2590F2;
+  }
+  .timeline_card:nth-child(2) .title::before{
+    border: 3px solid #2590F2; 
+  }
+
+  /* Card 3 */
+  .timeline_card:nth-child(3)::before{
+    border: solid #6B66DA;
+  }
+  .timeline_card:nth-child(3) .title{
+    color: #6B66DA;
+  }
+  .timeline_card:nth-child(3) .title::before{
+    border: 3px solid #6B66DA; 
+  }
+
+  /* Card 4 */
+  .timeline_card:nth-child(4)::before{
+    border: solid #6B66DA;
+  }
+  .timeline_card:nth-child(4) .title{
+    color: #6B66DA;
+  }
+  .timeline_card:nth-child(4) .title::before{
+    border: 3px solid #6B66DA; 
+  }
+
+  /* Card 5 */
+  .timeline_card:nth-child(5)::before{
+    border: solid #E73B65;
+  }
+  .timeline_card:nth-child(5) .title{
+    color: #E73B65;
+  }
+  .timeline_card:nth-child(5) .title::before{
+    border: 3px solid #E73B65; 
+  }
+
+   /* Card 6 */
+  .timeline_card:nth-child(6)::before{
+    border: solid #E73B65;
+  }
+  .timeline_card:nth-child(6) .title{
+    color: #E73B65;
+  }
+  .timeline_card:nth-child(6) .title::before{
+    border: 3px solid #E73B65; 
+  }
+  
+   /* Card 7 */
+  .timeline_card:nth-child(7)::before{
+    border: solid #E73B65;
+  }
+  .timeline_card:nth-child(7) .title{
+    color: #E73B65;
+  }
+  .timeline_card:nth-child(7) .title::before{
+    border: 3px solid #E73B65; 
+  }
+
+   /* Card 8 */
+  .timeline_card:nth-child(8)::before{
+    border: solid #F84F39;
+  }
+  .timeline_card:nth-child(8) .title{
+    color: #F84F39;
+  }
+  .timeline_card:nth-child(8) .title::before{
+    border: 3px solid #F84F39; 
+  }
+
   
   /* Setting the border of top, bottom, left */
   .timeline_card:nth-child(odd)::before {
     left: 0px;
-    top: -4px;
-    bottom: -3.8px;
+    top: -2px;
+    bottom: -2px;
     border-width: 4px 0 4px 4px;
     border-radius: 20px 0 0 20px;
   }
@@ -1213,12 +1305,12 @@ a{
   /* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
   @media only screen and (max-width: 400px) {
     .timeline_card:nth-child(odd)::before {
-      top: -4px;
-      bottom: -4px;
+      top: -2px;
+      bottom: -2px;
     }
     .timeline_card:last-child:nth-child(even)::before{
-        top: -.08px;
-        bottom: -4px;
+        top: -2px;
+        bottom: -2px;
     }
     .timeline_card {
         position: relative;
@@ -1229,59 +1321,60 @@ a{
   
 @media only screen and (max-width: 768px){
     .timeline-2{
-        display: none;
+        /* display: none; */
     }
 }
 
-  /* Setting the border of top, bottom, right */
-  .timeline_card:nth-child(even)::before {
+/* Setting the border of top, bottom, right */
+.timeline_card:nth-child(even)::before {
     right: 0;
-    top: 0;
-    bottom: 0;
+    top: -2px;
+    bottom: -2px;
     border-width: 4px 4px 4px 0;
     border-radius: 0 20px 20px 0;
-  }
-  
-  /* Removing the border if it is the first timeline_card */
-  .timeline_card:first-child::before {
+}
+
+/* Removing the border if it is the first timeline_card */
+.timeline_card:first-child::before {
     border-top: 0;
     border-top-left-radius: 0;
-  }
-  
-  /* Removing the border if it is the last timeline_card  and it's odd */
-  .timeline_card:last-child:nth-child(odd)::before {
+}
+
+/* Removing the border if it is the last timeline_card  and it's odd */
+.timeline_card:last-child:nth-child(odd)::before {
     border-bottom: 0;
     border-bottom-left-radius: 0;
-  }
-  
-  /* Removing the border if it is the last timeline_card  and it's even */
-  .timeline_card:last-child:nth-child(even)::before {
+}
+
+/* Removing the border if it is the last timeline_card  and it's even */
+.timeline_card:last-child:nth-child(even)::before {
     border-bottom: 0;
     border-bottom-right-radius: 0;
-  }
-  
-  /* Information about the timeline */
-  .info {
+}
+
+/* Information about the timeline */
+.info {
     display: flex;
     flex-direction: column;
-    background: #333;
+    background: #F4F4F5;
     color: gray;
+    border: 2px solid #E1E1E4;
     border-radius: 10px;
     padding: 10px;
-  }
-  .info p{
+}
+.info p{
     font-size: 16px;
     font-family: 'Outfit';
-  }
-  
-  /* Title of the timeline_card */
-  .title {
+}
+
+/* Title of the timeline_card */
+.title {
     color: orangered;
     position: relative;
-  }
-  
-  /* Timeline dot  */
-  .title::before {
+}
+
+/* Timeline dot  */
+.title::before {
     content: "";
     position: absolute;
     width: 10px;
@@ -1289,38 +1382,63 @@ a{
     top: 20px;
     background: white;
     border-radius: 999px;
-    border: 3px solid orangered;
-  }
-  
-  /* text right if the timeline_card is even  */
-  .timeline_card:nth-child(even) > .info > .title {
+    /* border: 3px solid orangered; */
+}
+
+/* text right if the timeline_card is even  */
+.timeline_card:nth-child(even) > .info > .title {
     text-align: right;
-  }
-  .timeline_card:nth-child(even) > .info > p {
+}
+.timeline_card:nth-child(even) > .info > p {
     text-align: right;
-  }
-  
-  /* setting dot to the left if the timeline_card is odd */
-  .timeline_card:nth-child(odd) > .info > .title::before {
-    left: -43px;
-  }
-  
-  /* setting dot to the right if the timeline_card is odd */
-  .timeline_card:nth-child(even) > .info > .title::before {
-    right: -43px;
-  }
-  .timeline_svg{
+}
+
+/* setting dot to the left if the timeline_card is odd */
+.timeline_card:nth-child(odd) > .info > .title::before {
+    left: -45px;
+}
+
+/* setting dot to the right if the timeline_card is odd */
+.timeline_card:nth-child(even) > .info > .title::before {
+    right: -45px;
+}
+.timeline_svg{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     text-align: center;
-    overflow: hidden;
-    
-  }
+    overflow: hidden;    
+}
 
-  
+.timeline_arrow{
+    display: none;
+    position: absolute;
+    right: -10px;
+    top: calc(50% - 15px) ;
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;     
+    border-right:18px solid #2590F2; 
+}
+
+.timeline_card:nth-child(even) .timeline_arrow{
+    right: 0px;
+    border-right: none;
+    left: -10px;
+    border-left:18px solid #2590F2; 
+}
+
+.timeline_active .timeline_arrow{
+    display: block;
+}
+.timeline_active .info{
+    background-color: #E1E1E4;
+    /* border-radius: 10px 5px 5px 10px; */
+}
+
 /* ------------------------------------------------------------------------------------------------------- */
 
 

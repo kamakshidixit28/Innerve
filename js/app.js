@@ -81,61 +81,103 @@ link.forEach(function (link) {
 
 // JS for time line---------------------------------------- 
 
-var circle1 = document.getElementById('circle1');
-var circle2 = document.getElementById('circle2');
-var x = new Date();
-if (x.getDate() >= 15 && x.getDate() <= 31 && x.getMonth() == 11) {
-    // circle1.style.backgroundColor = 'green';
-    // circle1.style.fontWeight = "bold";
-    circle1.style.borderStyle = "solid";
-    // circle1.style.css({
-    //     "background": "green"
-        
-    // })
-    // circle1.setAttribute("style", " border:red 1px solid;background:#4AE5EF content-box; z-index:5; font-weight:bold")
-    circle1.setAttribute("style", "background: #2590F2;border: 3px solid #FAFAFD;box-shadow: 1px 0px 2px #2590F2, -1px 0px 2px #2A966F;")    
-    
-}
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle2.style.borderStyle = "solid";
-    circle2.setAttribute("style", " border:red 1px solid;background:#7561FF content-box; z-index:5; font-weight:bold")
-}
+const tCards = document.querySelectorAll('.timeline_card');
+const x = new Date();
+let xDate = x.getDate();
+let xMonth = x.getMonth();
+let xTime = x.getHours();
 
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle3.style.borderStyle = "solid";
-    circle3.setAttribute("style", " border:red 1px solid;background:#2A966F content-box; z-index:5; font-weight:bold")
-}
+if(((xDate >= 20 && xDate <=31) && xMonth === 0) 
+    ||
+    ((xDate >= 1 && xDate <=20) && xMonth === 1)
+  ){
+  tCards[0].setAttribute("class", "timeline_card timeline_active")
+  tCards[1].setAttribute("class", "timeline_card")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
 
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle4.style.borderStyle = "solid";
-    circle4.setAttribute("style", " border:red 1px solid;background:#2590F2 content-box; z-index:5; font-weight:bold")
-}
+else if((xDate >= 21 && xDate <=28) && xMonth === 1){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card timeline_active")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
 
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle5.style.borderStyle = "solid";
-    circle5.setAttribute("style", " border:red 1px solid;background:#F72585 content-box; z-index:5; font-weight:bold")
-}
+else if(((xDate >= 1 && xDate <11) && xMonth === 2)
+        || 
+        (xDate === 11 && xMonth === 2 && xTime < 14)
+  ){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card")
+  tCards[2].setAttribute("class", "timeline_card timeline_active")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
 
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle6.style.borderStyle = "solid";
-    circle6.setAttribute("style", " border:red 1px solid;background:#A8DE45 content-box; z-index:5; font-weight:bold")
-}
+else if((xDate === 11 && xMonth === 2 && xTime >= 14 && xTime <= 15)){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card timeline_active")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
+else if((xDate === 11 && xMonth === 2 && xTime >= 15 && xTime <= 20)){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card timeline_active")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
+else if((xDate === 12 && xMonth === 2 && xTime <= 09)){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card timeline_active")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
+else if((xDate === 12 && xMonth === 2 && xTime >09 && xTime <= 13)){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card timeline_active")
+  tCards[7].setAttribute("class", "timeline_card")
+  }
+else if((xDate === 12 && xMonth === 2 && xTime >13 && xTime <= 17)){
+  tCards[0].setAttribute("class", "timeline_card")
+  tCards[1].setAttribute("class", "timeline_card timeline_active")
+  tCards[2].setAttribute("class", "timeline_card")
+  tCards[3].setAttribute("class", "timeline_card")
+  tCards[4].setAttribute("class", "timeline_card")
+  tCards[5].setAttribute("class", "timeline_card")
+  tCards[6].setAttribute("class", "timeline_card")
+  tCards[7].setAttribute("class", "timeline_card timeline_active")
+  }
 
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle7.style.borderStyle = "solid";
-    circle7.setAttribute("style", " border:red 1px solid;background:#4AE5EF content-box; z-index:5; font-weight:bold")
-}
 
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle8.style.borderStyle = "solid";
-    circle8.setAttribute("style", " border:red 1px solid;background:#7561FF content-box; z-index:5; font-weight:bold")
-}
-
-else if (x.getDate() >= 1 && x.getDate() <= 15 && x.getTime() == 0) {
-    circle9.style.borderStyle = "solid";
-    circle9.setAttribute("style", " border:red 1px solid;background:#4AE5EF content-box; z-index:5; font-weight:bold")
-}
-console.log('first')
 // -----------------------------------------------------------------------------------------------------------------
 
 
