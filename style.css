@@ -1797,6 +1797,7 @@ a{
     color: rgba(107, 102, 218, 0.10);
     
  }
+
   @media screen and (max-width: 1400px) {
     .timer_mark_the_date{
         margin-right: -110px;
@@ -1857,6 +1858,8 @@ a{
             content: " ";
         }
         .timer_march_date{
+            font-family: gilroy;
+            font-weight: bolder;
             margin-top: 10px;
         }
         .timer-box .box{
