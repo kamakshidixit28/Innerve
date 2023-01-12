@@ -56,7 +56,7 @@ section{
     /* height: 100% !important; */
 }
 /* Extra small devices (phones, 400px and down) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.5px) {
     .logo3D{
         display: none !important;
     }
@@ -157,7 +157,7 @@ body{
     /* border-bottom: ; */
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.5px) {
     .sponq{
         flex-wrap: wrap;
     }
@@ -414,8 +414,8 @@ body{
     }
 }
 
-/* Medium devices (landscape tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
+/* Medium devices (landscape tablets, 767.5px and down) */
+@media only screen and (max-width: 767.5px) {
     .heading{
         font-size: 15px;
     }
@@ -468,9 +468,9 @@ body{
     }
     .contact,.remove{
         bottom: 80px;
-        width: 120px;
-        gap: 15px;
-        height: 35px;
+        width: 120px !important;
+        gap: 15px !important;
+        height: 35px !important;
     }
     .nav_innerve{
         height: 20%;
@@ -999,7 +999,7 @@ a{
         font-size: 30px;
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.5px) {
     .theme_text {
         font-size : 16px;
         margin-top: 5px;
@@ -1557,7 +1557,7 @@ a{
         padding: 8px 25px;
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.5px) {
     .spon_us{
         padding: 2.2rem;
     }
@@ -1620,7 +1620,7 @@ a{
     background-color: #1D1F21;
     font-size: 1rem;
 }
-@media only screen and (min-width: 768px) and (max-width:992px) {
+@media only screen and (min-width: 767.5px) and (max-width:992px) {
     .fa{
         width: 30px;
         height: 30px;
@@ -2113,8 +2113,8 @@ a{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 767.5px and up) */
+@media only screen and (min-width: 767.5px) {
 
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -2674,7 +2674,7 @@ a{
 
 /* landscape media query codes */
 
-@media screen and (min-device-width: 768.5px) and (max-height: 490px) and (orientation: landscape) {
+@media screen and (min-device-width: 767.5px) and (max-height: 490px) and (orientation: landscape) {
     .hero{
         margin-top: 80px;
     }
