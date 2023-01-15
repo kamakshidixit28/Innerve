@@ -558,7 +558,13 @@ background: #1B1A27;
 }
 .s_icon{
     width: 100%;
+    /* max-height: 50px; */
+    height: 55px;
 }
+/* .s_box{
+    top:0;
+    bottom: 0;
+} */
 .s_logo_blue{
     background-color: #826EFF;
 }
