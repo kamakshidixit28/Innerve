@@ -451,6 +451,9 @@ body{
         margin-left: 20px;
         font-size: 15px;
     }
+    .nav_logo{
+        font-size: 1rem;
+    }
     .coll,.spon_coll{
         width: 120px;
         gap: 8px;
@@ -1803,6 +1806,9 @@ a{
     color: rgba(107, 102, 218, 0.10);
     
  }
+ .days,.hour,.minutes,.second{
+    margin-top: 10px;
+ }
 
   @media screen and (max-width: 1400px) {
     .timer_mark_the_date{
@@ -2170,7 +2176,14 @@ a{
     position: relative;
     padding-left: 10px;
   }
+  .faq-question button{
+    font-weight: 300;
+  }
   
+  .answer-wrapper p,.faq-answer p{ 
+    font-weight:200;
+  }
+
   .faq-section .faq-question.active {
     background-color: #7561FF;
     pointer-events: none;
