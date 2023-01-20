@@ -136,7 +136,6 @@ const customDatalabels={
   id:'customDatalabels',
   afterDatasetsDraw(chart,args,options){//pluginOptions
     const {ctx,data,chartArea:{top,bottom,left,right,width,height}}=chart;
-    console.log(width)
   //   ctx.save();
   //   data.datasets[0].key.forEach((datapoint,index)=>{
   //     const {x,y}=chart.getDatasetMeta(0).data[index].tooltipPosition();
@@ -236,7 +235,7 @@ clickhandler("#F84F39cccc",2)
 
 function clickhandler(color, idx) {
     show=idx;
-    console.log(show);
+    // console.log(show);
     for (let i = 0; i < titles.length; i++) {
       if (i==idx) {
         titles[i].classList.add("theme_active_text");
