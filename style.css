@@ -111,7 +111,10 @@ body{
         flex-direction: column;
         align-items: center;
     }
-    .apply-button{
+    .fa-discord{
+        display: none;
+    }
+    iframe{
         width: 100% !important;
     }
 }
