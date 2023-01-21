@@ -529,7 +529,7 @@ body{
         /* font-size: 1.2rem; */
     }
     .nav_logo{
-        letter-spacing: .3rem;
+        line-height: inherit;
     }
     .coll,.spon_coll{
         margin-right: 20px;
