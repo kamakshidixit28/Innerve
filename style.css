@@ -560,18 +560,17 @@ body{
 .s_box{
     box-sizing: border-box;
     transition: 0.3s ease;
-padding: 15px;
-padding-top: 5px;
-width: 330px;
-height: auto;
-
-background: #FAFAFD;
-border: 1px solid #E5E5E5;
-/* box-shadow: 0px 0px 50px rgba(248, 76, 61, 0.2); */
-border-radius: 10px;
-margin-left: 3rem;
-margin-right: 3rem;
+    padding: 15px;
+    min-height: 80px;
+    min-width: 250px;
+    background: #FAFAFD;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 16px;
 }
+
 .s_box_empty{
     box-sizing: border-box;
 width: 330px;
@@ -586,18 +585,25 @@ margin-right: 3rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .s_logo{
-    position: relative;
-    top: -35px;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 100px;
-    width: 100px;
+    width: clamp(50px, 40%, 100px);
     height: 10px;
     
 background: #1B1A27;
 }
 .s_icon{
-    width: 100%;
-    /* max-height: 50px; */
-    height: 55px;
+    max-height: 100%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 /* .s_box{
     top:0;
@@ -609,11 +615,20 @@ background: #1B1A27;
 .s_logo_pink{
     background-color: #FE4474;
 }
+.s_shell{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 @media screen and (max-width: 600px) {
-    .s_shell{
-        flex-wrap: wrap;
+    /* .s_shell{
+        padding: 0px !important;
     }
+    .s_box{
+        margin: 16px;
+    } */
     
 }
 
