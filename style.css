@@ -112,8 +112,9 @@ body{
         align-items: center;
         gap: 0;
     }
-    .fa-discord{
-        display: none;
+    .box_devfolio{
+        flex-direction: column-reverse;
+        align-items: center;
     }
     iframe{
         width: 100% !important;

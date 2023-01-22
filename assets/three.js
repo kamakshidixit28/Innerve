@@ -44,10 +44,10 @@ var obj;
             scroll.style.width = `${per}%`;
         const t = document.body.getBoundingClientRect().top;
         let hp = document.querySelector('.timer-wrapper').clientHeight;
-        if(window.innerHeight < scrollY){
+        if((window.innerHeight)/2+hp/2 < scrollY){
             document.querySelector('.logo3D').style.display = 'none';
         }
-        if(window.innerHeight-hp/2 < scrollY){
+        if((window.innerHeight)/2.1+hp/2 < scrollY){
             document.querySelector('.logo3D').style.zIndex = -10;
             document.querySelector('.logo3D').style.opacity = '0';
             // setTimeout(function(){ document.querySelector('.logo3D').style.display = 'none' }, 1000);
