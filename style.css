@@ -615,7 +615,7 @@ background: #1B1A27;
 }
 .s_logo_pink{
     background-color: #FE4474;
-    z-index: 1000;
+    z-index: 0;
 }
 .s_shell{
     display: flex;
