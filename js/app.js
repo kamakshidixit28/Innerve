@@ -1,3 +1,10 @@
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+
 let nav = document.querySelector('.neww');
 let hidden = document.querySelector('.hidden_nav');
 let close = document.querySelector('.remove');

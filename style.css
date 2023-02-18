@@ -157,12 +157,15 @@ body{
     display: flex;
     flex-direction: row;
     padding-top: 0;
+    justify-content: space-around;
+    align-items: center;
 }
 .squest{
     margin: 20px;
     margin-top: 0;
-    width: 428px;
+    /* width: 428px; */
     height: auto;
+    padding: 0rem 3rem;
 }
 .sqfake{
     background: var(--orange_gradient);
@@ -185,10 +188,10 @@ body{
     height: 50%;
 }
 .sqinner{
-    background-color: #fff;
+    background-color: #F4F4F5;
     border-radius: 19px;
-    /* border: 1px solid #BCBCBC; */
-    padding: 20px;
+    border: 1px solid #e1e1e4;
+    padding: 1rem 2rem;
     padding-top: 50px
     /* border-bottom: ; */
 }
@@ -687,6 +690,13 @@ background: #1B1A27;
     font-family: 'poppins';
     padding: 1rem 1rem;
 }
+.p-amount{
+    font-size: 20px;
+    font-family: 'Outfit';
+    font-weight: 500;
+    color: #aeaeae;
+    margin-bottom: 0px;
+}
 .pamount{
     font-size: 30px;
     font-family: 'Outfit';
@@ -695,8 +705,9 @@ background: #1B1A27;
 .pnum{
     font-size: 20px;
     font-family: "kodchasan";
+    font-weight: 700;
     -webkit-text-stroke: #1B1A27;
-    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-width: 0.3px;
     color: rgba(107, 102, 218, 0.10);
     
 }

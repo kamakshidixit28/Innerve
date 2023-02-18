@@ -241,47 +241,80 @@
             </div>
         </div>
     </section>
-    <!-- <section class="sponq container mb-5">
-        <div class="squest"><center>
-            <div class="sqlogo">
-                <img src="./assets/logo/SPIN.png" alt="">
-            </div>
-            <div class="sqfake">
-            <div class="sqinner">
-                <h6 class="pamount m-3">Rs 10,000</h6>
-                <p class="pnum m-3">Best Blockchain Hack</p>
-                <a href="#">more..</a>
-            </div>
-            </div>
-        </center> 
+
+    <section class="container mb-5">
+
+        <div class="heading mx-2 px-3">
+            Sponsored Problem Statements :
         </div>
-        <div class="squest"><center>
-            <div class="sqlogo">
-                <img src="./assets/logo/SPIN.png" alt="">
+        <p class = "m-2 px-5">Build Projects on these to get assured Prizes per Problem Statement</p>
+        <div class="sponq">
+            <div class="squest">
+                <center>
+                    <div class="sqlogo">
+                        <img src="./assets/logo/SPIN.png" alt="">
+                    </div>
+                    <div class="sqfake">
+                        <div class="sqinner">
+                            <p class="p-amount">Assured Prizes worth</p>
+                            <h6 class="pamount mx-3">Rs.10,000</h6>
+                            <p class="pnum m-3">Voice Based Travel Booking</p>
+                            <button type="button" class="btn btn-secondary mb-2" data-toggle="modal" data-target="#PS1">
+                                more...
+                            </button>
+                        </div>
+                    </div>
+                </center>
             </div>
-            <div class="sqfake">
-            <div class="sqinner">
-                <h6 class="pamount m-3">Rs 10,000</h6>
-                <p class="pnum m-3">Best Blockchain Hack</p>
-                <a href="#">more..</a>
-            </div>
-            </div>
-        </center> 
         </div>
-        <div class="squest"><center>
-            <div class="sqlogo">
-                <img src="./assets/logo/SPIN.png" alt="">
+
+        <!-- Modal PS 1 -->
+        <div class="modal fade" id="PS1" tabindex="-1" role="dialog" aria-labelledby="PS1Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="PS1Label">Voice Based Travel Booking (Eg. Alexa Skill)</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h5>The System will allow users to book a hotel ticket using voice commands.</h5>
+                        <ol>
+                            <li>
+                                The system will ask travel details to the user like origin, destination, travel date,
+                                number of guests, etc.
+                            </li>
+                            <li>
+                                The user will answer the queries and based on this he will get hotel suggestions(on
+                                other channel also like email/whatsapp).
+                            </li>
+                            <li>
+                                The user will select a hotel and further enter his contact details like phone number,
+                                email address, etc.
+                            </li>
+                            <li>
+                                The user will receive a payment link on his email address. (You may provide a
+                                dummy link of upi payment)
+                            </li>
+                            <li>
+                                After successful payment he will be informed about the booking status whether it is
+                                booked or failed.
+                            </li>
+                        </ol>
+                    <h5>Assumption</h5>
+                        <ul>
+                            <li>APIs required to book a flight would be available (like apis for search hotel, fetch hotels results, book hotel ).</li>
+                            <li>Assume that the user will complete the payment in 30 seconds.</li>
+                        </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
-            <div class="sqfake">
-            <div class="sqinner">
-                <h6 class="pamount m-3">Rs 10,000</h6>
-                <p class="pnum m-3">Best Blockchain Hack</p>
-                <a href="#">more..</a>
-            </div>
-            </div>
-        </center> 
-        </div>
-    </section> -->
+          </div>
+    </section>
 
     <!-- <br><br><br><br>
     <section id="prizeSec" class="prizeSec">
@@ -982,6 +1015,8 @@
 <script src="./assets/three.js" type="module"></script>
 
 <!-- bootstrap js files -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 
