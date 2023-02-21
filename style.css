@@ -155,22 +155,33 @@ body{
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
+    /* grid-template-columns: auto auto auto;
+    grid-template-rows:auto; */
     flex-direction: row;
     padding-top: 0;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 .squest{
-    margin: 20px;
+    /* margin: 20px; */
     margin-top: 0;
-    /* width: 428px; */
+    max-width: 300px;
     height: auto;
-    padding: 0rem 3rem;
+    /* padding: 0rem 3rem; */
 }
 .sqfake{
-    background: var(--orange_gradient);
     border-radius: 20px;
     padding-bottom: 5px;
+}
+.squest:nth-child(3n + 0) .sqfake{
+    background: var(--orange_gradient);
+}
+.squest:nth-child(3n - 1) .sqfake{
+    background: var(--green_gradient);
+}
+.squest:nth-child(3n - 2) .sqfake{
+    background: var(--blue_gradient);
 }
 .sqlogo{
     width: 80px;
@@ -183,6 +194,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.squest:nth-child(3n + 0) .sqlogo{
+    border: 8px solid #F9D1CE;
+}
+.squest:nth-child(3n - 1) .sqlogo{
+    border: 8px solid #95e9ca;
+}
+.squest:nth-child(3n - 2) .sqlogo{
+    border: 8px solid #b3daff;
 }
 .sqlogo img{
     height: 50%;
