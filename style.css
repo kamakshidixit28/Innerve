@@ -592,7 +592,7 @@ body{
     border-radius: 10px;
     justify-content: space-evenly;
     position: relative;
-    margin-top: 16px;
+    margin: 16px 0px;
 }
 
 .s_box_empty{
