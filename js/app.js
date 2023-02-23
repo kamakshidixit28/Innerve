@@ -1,3 +1,12 @@
+const images = document.querySelectorAll("img");
+images.forEach(noDrag)
+
+function noDrag(item, index, arr){
+  arr[index].setAttribute("draggable", false);
+  console.log("here");
+}
+
+
 
 let nav = document.querySelector('.neww');
 let hidden = document.querySelector('.hidden_nav');
