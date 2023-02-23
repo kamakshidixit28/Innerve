@@ -1309,7 +1309,7 @@ a{
     position: absolute;
     width: 15.85714285714%;
     left: 68.09116809116809%;
-    top: 51.67910447761194%;
+    top: 50.67910447761194%;
 }
 
 .timeline-img-button{
@@ -1469,11 +1469,11 @@ transform: translate(4px, 4px);
       }
 
   }
-  @media only screen and (max-width: 768px){
+  /* @media only screen and (max-width: 768px){
     .timeline-2{
         display: none;
     }
-  }
+  } */
 .timeline-2{
     overflow: hidden;
 }
