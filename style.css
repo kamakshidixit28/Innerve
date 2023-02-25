@@ -592,9 +592,14 @@ body{
     border-radius: 10px;
     justify-content: space-evenly;
     position: relative;
-    margin: 16px 0px;
+    margin: 16px 10px;
 }
 
+.title-sponsor{
+    margin: 40px 10px 10px 0px;
+    min-height: 120px;
+    min-width: 301px;
+}
 .s_box_empty{
     box-sizing: border-box;
 width: 330px;
